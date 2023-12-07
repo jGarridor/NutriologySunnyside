@@ -1,0 +1,58 @@
+@import url(./styles/header.css);
+@import url(./styles/main.css);
+@import url(./styles/footer.css);
+
+@font-face {
+    font-family: "Fraunces"; /*700 && 900*/
+    src: url(./fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "Barlow"; /*600*/
+    src: url(./fonts/Barlow-Regular.ttf);
+}
+
+:root {
+    /*Primary Colors*/
+    --Soft_red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark_desaturated_cyan: hsl(167, 40%, 24%); /* graphic design text. */
+    --Dark_blue: hsl(198, 62%, 26%); /* photography text */
+    --Dark_moderate_cyan: hsl(168, 34%, 41%);/* footer */
+    /* Neutral Colors */
+    --Very_dark_desaturated_blue: hsl(212, 27%, 19%);
+    --Very_dark_grayish_blue: hsl(213, 9%, 39%);
+    --Dark_grayish_blue: hsl(232, 10%, 55%);
+    --Grayish_blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+    /* Base Font */
+    font: 600 18px "Barlow";
+    --fra_700: 700 1rem "Fraunces";
+    --fra_900: 900 1rem "Fraunces"; 
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: max(100%, 14rem);
+}
+
+.special {
+    position: fixed !important;
+    top: 3.9rem;
+}
+
+
+/*FrontEnd Mentor Signature*/
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}

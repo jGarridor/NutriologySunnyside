@@ -1,0 +1,133 @@
+header {
+    background-color: transparent;
+    width: max(100%, 14rem);
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 min(1.5rem, 6vw) 0 min(1.5rem, 6vw);
+    position: absolute;
+    top: 0;
+    z-index: 99; 
+}
+
+.logo {
+    flex: 0 1 auto;
+    width: 8rem;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.burguer_nav {
+    flex: 0 1 0;
+    height: 1rem;
+}
+
+.burguer_nav:hover {
+    cursor: pointer;
+}
+
+.burguer_nav img {
+    height: 100%;
+    width: 1.6rem;
+}
+
+.nav__menu {
+    display: none;
+    width: min(60%, 32rem);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--White);
+}
+
+.nav__menu a, .nav__menu a:visited, .nav__menu a:hover {
+    font-size: inherit;
+    text-decoration: none;
+    color: var(--White);
+    cursor: pointer;
+}
+
+.nav__menu button {
+    padding: 0.6rem 1.5rem;
+    border-radius: 25% / 80%;
+    border: 0;
+    font: var(--fra_700);
+    color: var(--Very_dark_desaturated_blue);
+}
+
+.nav__menu button:hover {
+    background-color: hsl(194, 58%, 71%);
+    color: var(--White);
+    cursor: pointer; 
+}
+
+/* Media Query */
+
+@media (min-width: 720px) {
+    .burguer_nav {
+        display: none;
+    }
+
+    .variant {
+        display: none;
+    }
+
+    .nav__menu {
+        display: flex;
+    }
+
+    .logo {
+        width: 10.5rem;
+    }
+
+    .appen {
+        display: none;
+    }
+
+    .special {
+        position: unset !important;
+    }
+}
+
+@media (max-width: 719px) {
+    .variant {
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18rem;
+        width: min(30rem, 80%);
+        top: 5.5rem;
+        right: max(4%,1.35rem);
+        padding: 3rem 1rem;
+        background-color: var(--White);
+        color: var(--Very_dark_desaturated_blue);
+    }
+
+    .appen {
+        display: none;
+        height: 18rem;
+        background-color: transparent;
+        width: 0rem;
+        position: absolute;
+        top: 3.9rem;
+        right: max(4%, 1.35rem);
+        border: 50px solid var(--White);
+        border-left: 0;
+        border-top: 100px solid transparent;
+        border-bottom: 100px solid transparent;
+    }
+
+    .variant a, .variant a:visited, .variant a:hover{
+        color: var(--Dark_grayish_blue);
+    }
+
+    .variant button, .variant button:hover {
+        background-color: var(--Yellow);
+        color: var(--Very_dark_desaturated_blue);
+    }
+}
